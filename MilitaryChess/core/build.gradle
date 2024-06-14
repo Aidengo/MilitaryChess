@@ -1,0 +1,21 @@
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+eclipse.project.name = appName + '-core'
+
+dependencies {
+  api "com.badlogicgames.gdx:gdx:$gdxVersion"
+  api "com.github.hundun000.libgdx-hundun-lib:gamelib:$hundunLibVersion"
+  api "com.github.hundun000.libgdx-hundun-lib:corelib:$hundunLibVersion"
+  implementation "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+  implementation "com.github.raeleus.stripe:stripe:$raeleusStripeVersion"
+  implementation "com.github.raeleus.stripe:freetype:$raeleusStripeVersion"
+  implementation 'com.github.raeleus.TenPatch:tenpatch:5.2.3'
+  implementation 'com.github.raeleus.TenPatch:tenpatch:5.2.3'
+  implementation "com.alibaba:easyexcel:3.1.1"
+
+  api group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.5'
+  api group: 'com.github.nmorel.gwtjackson', name: 'gwt-jackson', version: '0.15.4'
+
+
+  compileOnly 'org.projectlombok:lombok:1.18.4'
+  annotationProcessor 'org.projectlombok:lombok:1.18.4'
+}
